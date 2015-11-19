@@ -33,6 +33,9 @@ p3 <- ggplot(data = data.plot3, aes(year, emissions)) +
 
 ggsave(plot = p3, filename = "plot3.png")
 
+# cleanup
+
+rm(p3)
 rm(data.plot3)
 
 
