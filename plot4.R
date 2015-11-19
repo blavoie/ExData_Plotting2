@@ -28,7 +28,7 @@ NEI.coal <- inner_join(NEI, SCC.coal, by = "SCC") %>%
 p4 <- 
   qplot(data = NEI.coal, 
       x=year, y=emissions, 
-      geom = "line",
+      geom = c("point", "line"),
       main = "Coal emissions across the United States", 
       xlab = "Year", 
       ylab = "Emissions in tons")

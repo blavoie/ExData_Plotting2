@@ -23,8 +23,8 @@ data.plot3 <- NEI %>%
   group_by(year, type) %>% 
   summarise(emissions = sum(Emissions))
 
-
 p3 <- ggplot(data = data.plot3, aes(year, emissions)) +
+  geom_point() +
   geom_line() +
   facet_grid(. ~ type) +
   ggtitle("Emissions by type, Baltimore City") +
