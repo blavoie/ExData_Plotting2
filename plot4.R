@@ -33,7 +33,7 @@ p4 <-
       xlab = "Year", 
       ylab = "Emissions in tons")
 
-ggsave(plot = p4, filename = "plot4.png")
+ggsave(plot = p4, filename = "plot4.png", width=10, height=10, dpi=100)
 
 # clenup
 

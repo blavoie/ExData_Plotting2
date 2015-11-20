@@ -34,7 +34,7 @@ p5<-
         xlab = "Year", 
         ylab = "Emissions in tons")
 
-ggsave(plot = p5, filename = "plot5.png")
+ggsave(plot = p5, filename = "plot5.png", width=10, height=10, dpi=100)
 
 # Cleanup
 

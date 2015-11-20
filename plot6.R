@@ -37,7 +37,7 @@ p6 <- qplot(year, emissions,
       xlab = "Year", 
       ylab = "Emmissions in tons")
 
-ggsave(plot = p6, filename = "plot6.png")
+ggsave(plot = p6, filename = "plot6.png", width=10, height=10, dpi=100)
 
 # Cleanup
 

@@ -31,7 +31,7 @@ p3 <- ggplot(data = data.plot3, aes(year, emissions)) +
   xlab("Year") +
   ylab("Total emissions in tons") 
 
-ggsave(plot = p3, filename = "plot3.png")
+ggsave(plot = p3, filename = "plot3.png", width=10, height=10, dpi=100)
 
 # cleanup
 
